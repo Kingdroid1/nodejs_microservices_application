@@ -13,7 +13,7 @@ const Customer = require('./customer.model');
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://xxxxxx/<yourDB_name>")
     .then(() => {
-        console.info('Customer DB connected on mlab');
+        console.info('Customer DB connected');
     }).catch((err) => {
         if (err) {
             console.log('Error', err)
