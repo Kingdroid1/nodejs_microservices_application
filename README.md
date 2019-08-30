@@ -1,5 +1,5 @@
 # nodejs_microservices_application
-##What are microservices?
+## What are microservices?
 Microservices - also known as the microservice architecture - is an architectural style that structures an application as a collection of services that are:<br/>
 
 Highly maintainable and testable<br/>
@@ -10,7 +10,8 @@ Owned by a small team<br/>
 The microservice architecture enables the rapid, frequent and reliable delivery of large, complex applications. It also enables an organization to evolve its technology stack.<br/>
 You can get started with this use case.<br/>
 ## Technologies Used
-Node.js, mlab<br>
+Node.js,<br/> 
+mlab<br>
 ### How To Run
 Use VS code editor or any other intuitive text editor<br/>
 Use `npm install --save` command to install package dependencies<br>
