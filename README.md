@@ -1,5 +1,5 @@
 # nodejs_microservices_application
-## <a href="https://microservices.io/" target="_blank">What are microservices?</a>
+## <a href="https://microservices.io/" target="_self">What are microservices?</a>
 Microservices - also known as the microservice architecture - is an architectural style that structures an application as a collection of services that are:<br/>
 
 Highly maintainable and testable<br/>
