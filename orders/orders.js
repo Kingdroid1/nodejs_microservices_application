@@ -15,7 +15,7 @@ const Order = require('./orders.model');
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://xxxxxx/<yourDB_name>")
     .then(() => {
-        console.info('Order DB connected on mlab');
+        console.info('Order DB connected');
     }).catch((err) => {
         if (err) {
             console.log('Error', err)
