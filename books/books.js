@@ -11,7 +11,7 @@ const Book = require('./books.model');
 
 // DB Connect
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://book:book123@ds259241.mlab.com:59241/bookservice")
+mongoose.connect("mongodb://xxxxxx/<yourDB_name>")
     .then(() => {
         console.log('DB connected on mlab')
     })
