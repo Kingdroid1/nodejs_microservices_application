@@ -13,7 +13,7 @@ const Order = require('./orders.model');
 
 // DB connect
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://order:order123@ds131763.mlab.com:31763/orderservice")
+mongoose.connect("mongodb://xxxxxx/<yourDB_name>")
     .then(() => {
         console.info('Order DB connected on mlab');
     }).catch((err) => {
@@ -76,7 +76,7 @@ app.get('/order/:id', (req, res) => {
     Order.findById(req.params.id)
         .then((order) => {
             if (order) {
-                axios.get('http://localhost:4040/customer/' + order.customerID)
+                axios.get('http://localhost:xyzxyz/customer/' + order.customerID)
                     .then((response) => {
                         let orderItem = {
                             CustomerName: response.data.message.name,
@@ -84,7 +84,7 @@ app.get('/order/:id', (req, res) => {
                         }
                         console.log('orderItem ...', orderItem.CustomerName);
 
-                        axios.get('http://localhost:3030/book/' + order.bookID)
+                        axios.get('http://localhost:xyzxyz/book/' + order.bookID)
                             .then((response) => {
                                 orderItem.BookTitle = response.data.message.title;
                                 console.log('orderItem2 ...', orderItem.BookTitle);
