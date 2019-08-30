@@ -11,7 +11,7 @@ const Customer = require('./customer.model');
 
 // DB connect
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://customer:customer123@ds243254.mlab.com:43254/customerservice")
+mongoose.connect("mongodb://xxxxxx/<yourDB_name>")
     .then(() => {
         console.info('Customer DB connected on mlab');
     }).catch((err) => {
